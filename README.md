@@ -22,7 +22,6 @@
 [![type](https://img.shields.io/badge/type-Docker-blue.svg)](https://www.docker.com/)
 [![License](https://img.shields.io/badge/license-MIT-%233DA639.svg)](https://opensource.org/licenses/MIT)
 
-[![Build Status](https://travis-ci.org/cytopia/devilbox.svg?branch=master)](https://travis-ci.org/cytopia/devilbox)
 [![Documentation Status](https://readthedocs.org/projects/devilbox/badge/?version=latest)](https://devilbox.readthedocs.io)
 [![Build Status](https://github.com/cytopia/devilbox/workflows/Lint/badge.svg)](https://github.com/cytopia/devilbox/actions?workflow=Lint)
 [![Build Status](https://github.com/cytopia/devilbox/workflows/Docs/badge.svg)](https://github.com/cytopia/devilbox/actions?workflow=Docs)
@@ -507,7 +506,7 @@ The Devilbox has everything setup for you. The only thing you will have to insta
   </tr>
   <tr>
     <td>:star: Auto virtual hosts</td>
-    <td>New virtual hosts are created automatically and instantly whenever you add a project directory. This is done internally via <a href="https://travis-ci.org/devilbox/vhost-gen">vhost-gen</a> and <a href="https://github.com/devilbox/watcherd">watcherd</a>.</td>
+    <td>New virtual hosts are created automatically and instantly whenever you add a project directory. This is done internally via <a href="https://github.com/devilbox/vhost-gen">vhost-gen</a> and <a href="https://github.com/devilbox/watcherd">watcherd</a>.</td>
   </tr>
   <tr>
     <td>:star: Automated SSL certs</td>
@@ -631,8 +630,8 @@ The following tools will assist you on creating new projects easily as well as h
     <td><code>linkcheck</code> is a command line tool that searches for URLs in files (optionally limited by extension) and validates their HTTP status code.</td>
   </tr>
   <tr>
-    <td>:wrench: <a href="https://linuxbrew.sh/">linuxbrew</a></td>
-    <td><code>brew</code> is a MacOS Homenbrew clone for Linux.</td>
+    <td>:wrench: <a href="https://brew.sh/">homebrew</a></td>
+    <td><code>brew</code> is a MacOS Homenbrew for Linux.</td>
   </tr>
   <tr>
     <td>:wrench: <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
@@ -779,13 +778,13 @@ The Devilbox is a development stack, so it is made sure that a lot of PHP module
 | <small>PDO_OCI</small>        |         |         |         |         |         |    d    |    d    |    d    |    d    |    d    |    d    |    d    |
 | <small>pdo_pgsql</small>      |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |
 | <small>pdo_sqlite</small>     |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
-| <small>pdo_sqlsrv</small>     |         |         |         |         |         |    d    |    d    |    d    |    d    |         |         |         |
+| <small>pdo_sqlsrv</small>     |         |         |         |         |         |    d    |    d    |    d    |    d    |    d    |    d    |         |
 | <small>pgsql</small>          |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |
-| <small>phalcon</small>        |         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |         |
+| <small>phalcon</small>        |         |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |         |         |
 | <small>Phar</small>           |    🗸    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>posix</small>          |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>pspell</small>         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |
-| <small>psr</small>            |         |         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |
+| <small>psr</small>            |         |         |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |
 | <small>rdkafka</small>        |         |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |         |         |
 | <small>readline</small>       |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>recode</small>         |    🗸    |    ✔    |    ✔    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |         |         |
@@ -802,7 +801,7 @@ The Devilbox is a development stack, so it is made sure that a lot of PHP module
 | <small>SPL</small>            |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>SQLite</small>         |    ✔    |    ✔    |         |         |         |         |         |         |         |         |         |         |
 | <small>sqlite3</small>        |         |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
-| <small>sqlsrv</small>         |         |         |         |         |         |    d    |    d    |    d    |    d    |    d    |         |         |
+| <small>sqlsrv</small>         |         |         |         |         |         |    d    |    d    |    d    |    d    |    d    |    d    |         |
 | <small>ssh2</small>           |         |         |         |         |         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |         |
 | <small>standard</small>       |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>swoole</small>         |         |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |    d    |         |         |
@@ -815,7 +814,7 @@ The Devilbox is a development stack, so it is made sure that a lot of PHP module
 | <small>vips</small>           |         |         |         |         |         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |         |
 | <small>wddx</small>           |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |         |         |
 | <small>xdebug</small>         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |
-| <small>xlswriter</small>      |         |         |         |         |         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |
+| <small>xlswriter</small>      |         |         |         |         |         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |
 | <small>xml</small>            |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>xmlreader</small>      |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |    ✔    |
 | <small>xmlrpc</small>         |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |    🗸    |         |         |

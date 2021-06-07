@@ -41,7 +41,7 @@
                             <ul class="nav">
                                 <li<?php echo (strstr($this->router->request, "/welcome/index/") ? ' class="active"' :null)?>>
                                     <a href="<?php echo $this->router->url?>/welcome/index/<?php echo $this->app->current['serverId'] . '/' . $this->app->current['database'] ?>">
-                                        <i class="icon-white icon-home"></i> Home
+                                        <i class="icon-white icon-home"></i> Accueil
                                     </a>
                                 </li>
                                 <li<?php echo (strstr($this->router->request, "/welcome/info/") ? ' class="active"' :null)?>>
@@ -61,7 +61,7 @@
                                 </li>
                                 <li<?php echo (strstr($this->router->request, "/welcome/slowlog/") ? ' class="active"' :null)?>>
                                     <a href="<?php echo $this->router->url?>/welcome/slowlog/<?php echo $this->app->current['serverId'] . '/' . $this->app->current['database'] ?>">
-                                        <i class="icon-white icon-warning-sign"></i> Slow Log
+                                        <i class="icon-white icon-warning-sign"></i> Voir Log
                                     </a>
                                 </li>
                                 <?php if (App::instance()->config['terminal']['enable']): ?>
